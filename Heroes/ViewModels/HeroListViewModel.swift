@@ -52,6 +52,7 @@ final class HeroListViewModel {
     func reload() {
         guard !isLoading else { return }
         heroes.removeAll()
+        page = 1
         getHeroes()
     }
     
